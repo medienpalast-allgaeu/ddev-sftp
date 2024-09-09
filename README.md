@@ -8,7 +8,7 @@
 
 ## Zugangsdaten
 
-Benutzer: `fstpuser`  
+Benutzer: `sftpuser`  
 Passwort: `sftPassw0rd`  
 Host: `sftp`  
 Basisverzeichnis: `/sftp`  
