@@ -1,0 +1,17 @@
+#ddev-generated
+
+# https://github.com/emberstack/docker-sftp
+
+services:
+  sftp:
+    container_name: ddev-${DDEV_SITENAME}-sftp
+    image: emberstack/sftp
+    restart: "no"
+    expose:
+      - 22
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+    volumes:
+      - ./sftp/sftp.json:/app/config/sftp.json
+      - ./sftp/data:/home/sftpuser/sftp
